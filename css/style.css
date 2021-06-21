@@ -4,9 +4,77 @@
 /*----global css------ */
 
 body{
-    font-family: 'Montserrat', sans-serif;  
+    font-family: 'Montserrat', sans-serif; 
+    color:#5a5a5a;
+   
+}
+a{
+    text-decoration: none;
+}
+ul{
+    padding:0;
+    margin:0;
 }
 
 
-
-/*---- header ------*/
+/*---- Header section + banner ------*/
+header{
+    background: url(../images/mache-bg.png) no-repeat center top;
+    background-size: cover;
+    
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color:#ed145b;
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 700;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color:#ed145b;
+}
+.border-content{
+    padding: 300px 0 300px;
+    
+}
+.banner-border{
+    height: 2px; 
+    background-color: #ed145b;
+    width: 200px;
+    margin: 40px auto;   
+}
+.border-content h1{
+    text-align:center;
+    font-weight: 300;
+    color: #fff;
+    text-transform: uppercase;
+}
+.border-content span{
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.border-content p{
+    padding: 0 0 57px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+}
+.button-link{
+    border: 1px solid #ed145b;
+    border-radius: 24px;
+    background: #ed145b;
+    color: #fff;
+    padding: 11px 32px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    font-weight: 500;
+}
+.button-link:hover{
+    background: #fff;
+    color:#ed145b;
+}
+/*---- About Us section ------*/
