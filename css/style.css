@@ -41,9 +41,11 @@ header{
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
     font-weight: 700;
+    transition: .5s ease-in-out;
 }
 .navbar-light .navbar-nav .nav-link:hover{
     color:#ed145b;
+    transition: .5s ease-in-out;
 }
 .banner-content{
     padding: 300px 0 300px;
@@ -81,10 +83,12 @@ header{
     display: block;
     margin: 0 auto;
     font-weight: 500;
+    transition: .5s ease-in-out;
 }
 .button-link:hover{
     background: #fff;
     color:#ed145b;
+    transition: .5s ease-in-out;
 }
 
 /*===== 
@@ -119,7 +123,9 @@ About Us section css
     font-size: 16px;
     padding: 0 0px 20px;
     line-height: 30px;
-    margin-right: 84px;
+    margin-right: 158px;
+    margin-bottom: 0;
+
 }
 .about-us a{
     color:#ed145b;
@@ -139,7 +145,7 @@ About Us section css
 .laptop-screen img{
     position: absolute;
     width: 132%;
-    top: -39px;
+    top: -25px;
     left: -129px;
     
 }
@@ -148,7 +154,7 @@ About Us section css
 ======*/
 
 .our-services{
-    padding: 150px 0 75px;
+    padding: 130px 0 75px;
     background: #fff;
 }
 .our-services h2{
@@ -190,22 +196,133 @@ Testimonial section css
     padding: 100px 0;
 }
 
-.testimonial img{
-    width: 60px;
-    display: block;
-    margin: 20px auto;
+.owl-carousel .owl-item img{
+    width:60px;
+    height:auto;
+    display:block;
+    margin:0 auto;
 
 }
 .testimonial p{
+    font-size: 22px;
+    font-weight: 300;
+    font-style: italic;
     text-align: center;
-    padding: 36px 331px;
+    padding: 35px 217px;
     line-height: 30px;
     margin: 0;
+    color: #fff;
+}
+.owl-prev{
+    top: 30%;
+    left: 10%;
+    font-size: 40px !important;
+    position: absolute;
+    color: #fff !important;
+}
+.owl-next{
+    top: 30%;
+    right: 10%;
+    font-size: 40px !important;
+    position: absolute;
+    color: #fff !important;
+}
+.owl-theme .owl-nav [class*=owl-]:hover {
+    background:transparent;
+    color:#ed145b !important;
+    text-decoration: none;
+}
+/* ====
+pricing css
+==== */
+.prices{
+    padding: 75px 0 75px;
+    background: #f4f4f4;
+}
+.prices h2{
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    font-style: italic;
+    text-align: center;
+}
+.prices .title-border{
+    margin: 30px auto;
+}
+.prices p {
+    font-size: 16px;
+    margin: 39px 244px 100px;
+    text-align: center;
+    line-height: 35px;
+}
+.pricing-head{
+    background: #5a5a5a;
+    color:#fff; 
+    padding: 30px 0;
+    position: relative;
+    transition: .4s ease-in-out;
+}
+.pricing-body{
+    background: #fff;
+    padding: 40px 30px;
+}
+.pricing-body ul li{
+    list-style-type: none;
+    text-align: center;
+    line-height: 45px;
+    color: #5a5a5a;
+    font-size: 16px;
+    font-weight: 500;
+}
+.pricing-head h1{
+    text-align: center;
+    margin: 0;
+}
+.pricing-head h1 span{ 
+    font-size: 22px ;
+}
+.pricing-head h6{
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+
 }
 
-
-
-
+.btn-head{
+    border: none;
+    border-radius: 25px;
+    background: #f4f4f4;
+    color: #5e5e5e;
+    padding: 10px 55px;
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    font-weight: 600; 
+    position: absolute;
+    bottom: -22px;
+    right: 51px;
+}
+.btn-body{
+    border: 1px solid #ed145b;
+    border-radius: 25px;
+    background: #ed145b;
+    color: #fff;
+    padding: 11px 55px;
+    text-transform: uppercase;
+    display: block;
+    margin: 20px auto 0;
+    font-weight: 600;
+}
+.pricing-box .pricing-head:hover{
+    background: #ed145b;
+    transition: .4s ease-in-out;
+}
+.pricing-box .btn-body:hover{
+    border: 2px solid #ed145b;
+    background:#fff;
+    color:#ed145b;
+}
 /* ====
 footer css
 ==== */
