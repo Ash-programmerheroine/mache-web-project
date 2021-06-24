@@ -1,11 +1,11 @@
-/*===== 
+/*========== 
 google fonts
-=====*/
+============*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
-/*=====
+/*========
 global css
-===== */
+========== */
 
 body{
     font-family: 'Montserrat', sans-serif; 
@@ -27,10 +27,11 @@ ul{
 .mb-50{
     margin-bottom: 50px;
 }
+.mb-20{ margin-bottom: 20px;}
 
-/*===== 
+/*=========================
 Header section + banner css
-=====*/
+===========================*/
 
 header{
     background: url(../images/mache-bg.png) no-repeat center top;
@@ -94,9 +95,9 @@ header{
     transition: .5s ease-in-out;
 }
 
-/*===== 
+/*================== 
 About Us section css
-====*/
+====================*/
 
 .about-us{
     position: relative;
@@ -152,9 +153,9 @@ About Us section css
     left: -129px;
     
 }
-/*=====
+/*=======================
  Our services section css
-======*/
+=========================*/
 
 .our-services{
     padding: 130px 0 75px;
@@ -190,9 +191,9 @@ About Us section css
     margin:20px 0;
 }
 
-/* ====
+/* =====================
 Testimonial section css
-==== */
+======================== */
 .testimonial{
     background: url(../images/mache-bg.png) no-repeat center top;
     background-size: cover;
@@ -235,9 +236,9 @@ Testimonial section css
     color:#ed145b !important;
     text-decoration: none;
 }
-/* ====
+/* ========
 pricing css
-==== */
+=========== */
 .prices{
     padding: 75px 0 75px;
     background: #f4f4f4;
@@ -345,7 +346,7 @@ additional info section css
     line-height: 24px;
     color:#5a5a5a;
 }
-/* =======
+/* =========
 join us css
 =========== */
 .join-us{
@@ -379,7 +380,8 @@ join us css
     font-size: larger;
     transition: .4s ease-in-out;
 }
-/* =======
+
+/* ===============
 Latest updates css
 =========== */
 .latest-updates{
@@ -405,6 +407,113 @@ Latest updates css
 }
 /* picture hover */
 
+.latest-updates .update-item-head{
+	height: 250px;
+    width: 360px;
+    position: relative;
+	transition: 00.3s ease-in-out;
+	overflow: hidden;
+}
+
+.item-hover{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:rgba(237, 20, 91, 1) ;
+	top:0;
+	left:-100%;
+	text-align: center;
+	transition: 00.3s ease-in-out;
+	
+}
+.update-item-head:hover .item-hover{
+	background: rgba(237, 20, 91, .8) ;
+	left:0%;
+}
+.item-hover ul{
+	padding-inline-start: 0;
+	display: block;
+	margin-top: 30%;
+	
+}
+.item-hover ul li{
+	list-style-type: none;
+    display: inline;
+    font-size: 34px;
+    margin: 0 5px;
+    border-radius: 3px;
+}
+.item-hover ul li .fa{
+	color: #fff;
+	
+} 
+.item-box-body{
+    background:#f4f4f4;
+    padding: 15px;
+    height: 150px;
+    width: 360px;
+    margin-bottom: 20px;
+}
+.item-box-body h4{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.item-box-body p{
+    margin: 0;
+    font-size: 14px;
+    line-height: 27px;
+    color: #5a5a5a;
+    text-align: left;
+}
+
+
+/* ===================
+2nd additional info css
+======================= */
+.additional-info2{
+    background:url(../images/mache-bg.png) no-repeat center top;
+    background-size: cover;
+    padding: 200px 0;
+}
+.additional-info2 h2{font-size: 40px;
+    font-weight: 400;
+    line-height: 50px;
+    font-style: italic;
+    text-align: center;
+    color: #fff;
+}
+.additional-info2 .title-border {
+    margin: 30px auto;
+}
+.additional-info2 p {
+    padding: 0px 269px 20px;
+    text-align: center;
+    color: #fff;
+    line-height: 40px;
+}
+
+/* =======
+Download section css
+=========== */
+.download-sec{
+    background:#f4f4f4;
+    padding: 100px 0;
+}
+.download-sec h2{font-size: 36px;
+    font-weight: 400;
+    line-height: 50px;
+    font-style: italic;
+}
+.download-sec .title-border {
+    margin: 30px 0;
+}
+.download-sec p{padding: 0px 110px 0 0;margin-bottom: 35px;}
+.download-now{padding-left: 65px;}
+.download-sec .button-link{display: inline;
+}
 
 /* =======
 footer css
@@ -441,10 +550,9 @@ Media Query css for mobile
     .banner-content h1{padding: 0 80px;}
     .banner-content p{padding:0 50px;margin-bottom: 25px;}
     .navbar-toggler .fa {color:#fff;}
-    .laptop-screen img{position:relative;
-        width:100%;top: 46px;left: 1px;margin: 0 auto;}
+    .laptop-screen img{position:relative;width:100%;top: 46px;left: 1px;margin: 0 auto;}
     .about-us h2{text-align: center;}
-    .about-us .title-border{margin:10px auto;}
+    .about-us .title-border{margin:30px auto;}
     .about-us p{ margin: 0; padding: 20px 25px;text-align: center;}
     .about-us a{display:block;text-align: center;}
     .our-services { padding: 100px 0 75px;}
@@ -460,7 +568,26 @@ Media Query css for mobile
     .additional-info p {padding: 0 20px;text-align: center;}
     .join-us{text-align:center;}
     .join-us h1{padding: 12px 10px;line-height: 40px;}
-    .latest-updates p {margin:0; padding: 0 20px 20px;}
+    .latest-updates p {margin: 0; padding: 20px;}
+    .latest-updates .img-paragraph { padding: 0;}
+    
+    .update-item-head{display:block;margin: 0 auto;}
+    .item-box-body{ display:block;margin: 0 auto;}
+    .additional-info2{padding: 75px 0;}
+    .additional-info2 p {padding: 0;margin: 0 25px 45px;}
+    .download-now {
+        padding-left: 0;
+        text-align: center;
+    }
+    .download-sec {padding: 75px 0;}
+    .download-sec img{margin-bottom: 50px;}
+    .download-sec .title-border {
+        margin: 30px auto;
+    }
+    .download-sec p {
+        padding: 25px;
+        margin-bottom: 35px;}
+    
     footer .copyright {padding: 30px 0 0;text-align: center;}
     footer p{padding-top: 0;text-align: center;}
 }
