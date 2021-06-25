@@ -480,7 +480,8 @@ Latest updates css
       display: block;                   
       text-align: center;
     }
-.show-more a{color: #ed145b;
+.show-more a{
+    color: #ed145b;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 500;
@@ -571,7 +572,7 @@ Media Query css for mobile
 ========================== */
 @media (min-width:320px) and (max-width:576px){
     .banner-content{padding:100px 0;}
-    .banner-content h1{padding: 0 80px;}
+    .banner-content h1{padding: 0px 68px;}
     .banner-content p{padding:0 50px;margin-bottom: 25px;}
     .navbar-toggler .fa {color:#fff;}
     .laptop-screen img{position:relative;width:100%;top: 46px;left: 1px;margin: 0 auto;}
