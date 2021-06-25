@@ -413,6 +413,11 @@ Latest updates css
     position: relative;
 	transition: 00.3s ease-in-out;
 	overflow: hidden;
+    
+}
+.update-item-head {
+    display: block;
+    margin: 0 auto;
 }
 
 .item-hover{
@@ -423,8 +428,7 @@ Latest updates css
 	top:0;
 	left:-100%;
 	text-align: center;
-	transition: 00.3s ease-in-out;
-	
+	transition: 00.3s ease-in-out;	
 }
 .update-item-head:hover .item-hover{
 	background: rgba(237, 20, 91, .8) ;
@@ -453,6 +457,7 @@ Latest updates css
     height: 150px;
     width: 360px;
     margin-bottom: 20px;
+    margin: 0 auto;
 }
 .item-box-body h4{
     text-transform: capitalize;
@@ -468,7 +473,26 @@ Latest updates css
     color: #5a5a5a;
     text-align: left;
 }
-
+ .show-more{
+    padding: 100px 0 0px;
+ }
+ .show-more .text-show-more-center{
+      display: block;                   
+      text-align: center;
+    }
+.show-more a{color: #ed145b;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+}
+.show-more  .text-show-more-center .fa
+    {
+	display: block;
+	color:#ed145b;
+	font-size:30px;
+	margin:3px 0 0;
+	text-align:center;
+}
 
 /* ===================
 2nd additional info css
